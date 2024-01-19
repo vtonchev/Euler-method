@@ -17,5 +17,5 @@ It has also plotting capabilities for the solution.
 
 Example:
 
-![image](https://github.com/vtonchev/Euler-method/assets/23662270/d63a66f4-d6b6-4634-b132-71590f289898)
+![image](https://github.com/vtonchev/Euler-method/assets/23662270/813d44d8-485f-4735-8265-40db0e125a08)
 
