@@ -8,7 +8,7 @@ This program solves an ordinary differential equation in the form: dy/dx = y, wi
     - h = the step size (ex. 0.1)
     - xn = the right limit of the plot. (ex.1)
 3. How to run
-   3.1 execute the program by typing in the command prompt: /{FOLDER_OF_THE_PROGRAM}/main.o (Make sure you have already compiled the program).
-   3.2 you would be prompted with 4 variables that you have to enter (ex. 0 0 0.1 1).
-   3.3 Voilà you have the result.
+   - execute the program by typing in the command prompt: /{FOLDER_OF_THE_PROGRAM}/main.o (Make sure you have already compiled the program).
+   - you would be prompted with 4 variables that you have to enter (ex. 0 0 0.1 1).
+   - Voilà you have the result.
    
