@@ -1,8 +1,4 @@
 #include "stdio.h"
-#include "gnuplot_i.h"
-
-// #include "stdlib.h"
-int plotOnGnu(float *vectorResult[][2], int vectorResultsLength);
 
 float func(float x, float y)
 {
@@ -13,7 +9,7 @@ float func(float x, float y)
 
 int main()
 {
-  float vectorResult[][2] = {};
+  float vectorResult[2][10000] = {};
   int vectorResultsLength = 0;
   float a, b, x, y, h, t, k;
   printf("\nEnter x0,y0,h,xn: ");
@@ -27,27 +23,15 @@ int main()
     y = y + k;
     x = x + h;
 
-    vectorResult[index][0] = x;
-    vectorResult[index][1] = y;
+    vectorResult[0][index] = x;
+    vectorResult[1][index] = y;
     vectorResultsLength++;
   }
 
   for (long i = 0; i < vectorResultsLength; i++)
   {
-    printf("%0.3f\t%0.3f\n", vectorResult[i][0], vectorResult[i][1]);
+    printf("%0.3f\t%0.3f\n", vectorResult[0][i], vectorResult[1][i]);
   }
 
-  plotOnGnu(vectorResult, vectorResultsLength);
-
-  return 0;
-}
-
-int plotOnGnu(float *vectorResult[][2], int vectorResultsLength)
-{
-  gnuplot_ctrl *h1;
-  h1 = gnuplot_init();
-  gnuplot_setstyle(h1, "lines");
-  gnuplot_plot_xy(h1, vectorResult[0], vectorResult[1], vectorResultsLength, "Euler");
-  gnuplot_close(h1);
   return 0;
 }
