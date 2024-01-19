@@ -19,3 +19,6 @@ Example:
 
 ![image](https://github.com/vtonchev/Euler-method/assets/23662270/813d44d8-485f-4735-8265-40db0e125a08)
 
+Considerations:
+There is a hardcoded limit of the maximum descrete solutions the algorithm can output if the software reaches it a segmentation error will appear. Make sure you always satisfy this condition:
+xn/h <= 100_000
