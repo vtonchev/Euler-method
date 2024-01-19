@@ -3,7 +3,7 @@ It has also plotting capabilities for the solution.
 1. Instalation
    - Make sure you have program "make" in order to run the Makefile. Execute this command in the folder of the Makefile:
    > make 
-   - if you do not have make you can also compile the source by using the command: 
+   - if you do not have make you can also compile the source by using the command inside the source folder: 
    > gcc main.c libs/pbPlots/pbPlots.c libs/pbPlots/supportLib.c -std=c99 -O3 -march=native -o main.o
 3. Input parameters
     - X0 = initial conditions for x (ex. 0)
