@@ -12,7 +12,7 @@ It has also plotting capabilities for the solution.
     - xn = the right limit of the plot. (ex.1)
 4. How to run
    - execute the program by typing in the command prompt: /{FOLDER_OF_THE_PROGRAM}/main.o (Make sure you have already compiled the program).
-   - you would be prompted with 4 variables that you have to enter (ex. 0 0 0.1 1).
+   - you would be prompted with 4 variables that you have to enter (ex. 0 1 0.1 1).
    - Voilà, you have the result in a table format inside the console, however you can also view the graph of the solution. It will be in a png format with tha name "graph.png" in the folder of the program(main.o)
 
 Example:
