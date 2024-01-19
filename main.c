@@ -16,7 +16,7 @@ float func(float x, float y)
 
 int main()
 {
-  float vectorResult[2][10000] = {};
+  float vectorResult[2][100000] = {};
   int vectorResultsLength = 0;
   float a, b, x, y, h, t, k;
   printf("\nEnter x0 y0 h xn: ");
@@ -48,7 +48,7 @@ int main()
 int plotGraph(float xs[], float ys[])
 {
   RGBABitmapImageReference *canvasReference = CreateRGBABitmapImageReference();
-  DrawScatterPlot(canvasReference, 600, 400, ys, 5, xs, 5);
+  DrawScatterPlot(canvasReference, 600, 400, ys, 10, xs, 10);
 
   size_t length;
   double *pngdata = ConvertToPNG(&length, canvasReference->image);
